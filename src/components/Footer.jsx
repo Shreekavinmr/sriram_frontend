@@ -113,14 +113,10 @@ const Footer = () => {
         rel="noopener noreferrer"
         className="whatsapp-float"
       >
-        <FaWhatsapp /> Chat
+        <FaWhatsapp />
+<span>Chat</span>
       </a>
 
-      {/* Share */}
-      <div className="share-float">
-        <FaShareAlt />
-        <span>Share</span>
-      </div>
     </>
   );
 };

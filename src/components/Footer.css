@@ -162,10 +162,10 @@
   position: fixed;
   right: 20px;
   bottom: 25px;
-  background: #25D366;   /* Official WhatsApp Green */
+  background: #25D366;
   color: #ffffff;
   padding: 10px 16px;
-  border-radius: 6px;
+  border-radius: 30px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -174,10 +174,26 @@
   box-shadow: 0 4px 10px rgba(0,0,0,0.25);
   z-index: 1000;
   transition: 0.3s ease;
+  white-space: nowrap;
 }
 
 .whatsapp-float:hover {
-  background: #1DA851;   /* Darker Green Hover */
+  background: #1DA851;
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .whatsapp-float {
+    right: 15px;
+    bottom: 15px;
+    padding: 12px;
+    border-radius: 50%;
+    font-size: 1.1rem;
+  }
+
+  .whatsapp-float span {
+    display: none;   /* Hide text on mobile */
+  }
 }
 
 /* ============================= */
@@ -187,7 +203,7 @@
   position: fixed;
   right: 0;
   top: 40%;
-  background: #25D366;  /* Darkest Teal */
+  background: #173F42;
   color: #ffffff;
   padding: 12px 8px;
   display: flex;
@@ -203,8 +219,25 @@
 }
 
 .share-float:hover {
-  background: #1DA851; 
+  background: var(--accent);
+  color: black;
   transform: translateX(-3px);
+}
+
+/* MOBILE FIX */
+@media (max-width: 600px) {
+  .share-float {
+    top: auto;
+    bottom: 90px;  /* move above whatsapp */
+    right: 15px;
+    border-radius: 50%;
+    padding: 12px;
+    flex-direction: row;
+  }
+
+  .share-float span {
+    display: none;  /* Hide text */
+  }
 }
 
 /* ============================= */
