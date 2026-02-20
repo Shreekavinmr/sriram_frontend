@@ -1,0 +1,109 @@
+.craft-section {
+  padding: 7rem 5%;
+  background: #f9f9f9;
+}
+
+.craft-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: center;
+}
+
+/* ============================= */
+/* COLLAGE */
+/* ============================= */
+.craft-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.craft-gallery img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+}
+
+/* Different boutique rounded shapes */
+.img1 {
+  border-top-left-radius: 120px;
+  border-bottom-right-radius: 20px;
+}
+
+.img2 {
+  border-top-right-radius: 120px;
+  border-bottom-left-radius: 20px;
+}
+
+.img3 {
+  border-bottom-left-radius: 120px;
+  border-top-right-radius: 20px;
+}
+
+.img4 {
+  border-bottom-right-radius: 120px;
+  border-top-left-radius: 20px;
+}
+
+/* ============================= */
+/* CONTENT */
+/* ============================= */
+.craft-content {
+  max-width: 500px;
+}
+
+.craft-tag {
+  font-size: 0.75rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #173F42;
+}
+
+.craft-content h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 2.6rem;
+  margin: 1rem 0;
+  color: #173F42;
+}
+
+.gold-line {
+  width: 60px;
+  height: 2px;
+  background: #F5C542;
+  margin: 1.5rem 0;
+}
+
+.craft-content p {
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.craft-btn {
+  background: #173F42;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.craft-btn:hover {
+  background: #F5C542;
+  color: black;
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 900px) {
+  .craft-container {
+    grid-template-columns: 1fr;
+  }
+
+  .craft-gallery img {
+    height: 220px;
+  }
+}

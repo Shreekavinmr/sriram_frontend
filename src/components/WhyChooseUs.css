@@ -1,0 +1,41 @@
+.why-section {
+  padding: 6rem 5%;
+  background: linear-gradient(135deg, #173F42, #0F2E30);
+  color: white;
+  text-align: center;
+}
+
+.why-section h2 {
+  font-size: 2.3rem;
+  color: #F5C542;
+  margin-bottom: 4rem;
+  font-family: 'Playfair Display', serif;
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.why-card {
+  background: rgba(255,255,255,0.05);
+  padding: 2rem;
+  border-radius: 16px;
+  transition: 0.3s ease;
+}
+
+.why-card:hover {
+  transform: translateY(-6px);
+}
+
+.why-card h3 {
+  margin-bottom: 1rem;
+  color: #F5C542;
+}
+
+@media (max-width: 1000px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

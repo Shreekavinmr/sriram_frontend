@@ -1,0 +1,31 @@
+.hero-slider {
+  position: relative;
+  width: 100%;
+  height: 650px;   /* Increased height */
+  overflow: hidden;
+  background: #173F42;
+}
+
+.slide {
+  position: absolute;
+  width: 100%;
+  height: 650px;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.slide.active {
+  opacity: 1;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero-slider {
+    height: 450px;
+  }
+
+  .slide {
+    height: 450px;
+  }
+}

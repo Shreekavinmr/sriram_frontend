@@ -1,0 +1,234 @@
+/* ============================= */
+/* THEME COLORS */
+/* ============================= */
+:root {
+  --primary: #173F42;        /* Dark Premium Teal */
+  --primary-dark: #0F2E30;   /* Even Darker for floats */
+  --accent: #f5d47a;         /* Champagne Gold */
+  --white: #ffffff;
+  --light: #f8f8f8;
+}
+/* ============================= */
+/* FOOTER BASE */
+/* ============================= */
+.footer {
+  background-color: var(--primary);
+  color: var(--white);
+  padding: 3rem 2rem 1.5rem;
+}
+
+/* ============================= */
+/* GRID */
+/* ============================= */
+.footer-container {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 3rem;
+}
+
+/* ============================= */
+/* COLUMNS */
+/* ============================= */
+.footer-col h4 {
+  font-size: 0.85rem;
+  letter-spacing: 2px;
+  margin-bottom: 1.2rem;
+  color: var(--accent);
+}
+
+.footer-col ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-col ul li {
+  font-size: 0.9rem;
+  margin-bottom: 0.7rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.footer-col ul li:hover {
+  color: var(--accent);
+  transform: translateX(4px);
+}
+
+.footer-col p {
+  font-size: 0.9rem;
+  margin-bottom: 0.8rem;
+  display: flex;
+  gap: 8px;
+}
+
+/* ============================= */
+/* SHOW MORE BUTTON */
+/* ============================= */
+.show-more-btn {
+  margin-top: 0.8rem;
+  background: transparent;
+  border: 1px solid var(--accent);
+  color: var(--accent);
+  padding: 6px 14px;
+  cursor: pointer;
+  font-size: 0.8rem;
+  border-radius: 4px;
+  transition: 0.3s ease;
+}
+
+.show-more-btn:hover {
+  background: var(--accent);
+  color: var(--primary);
+}
+
+/* ============================= */
+/* BRAND */
+/* ============================= */
+.brand-col h2 {
+  font-size: 2rem;
+  margin-bottom: 0;
+  letter-spacing: 1px;
+}
+
+.brand-col span {
+  font-size: 0.7rem;
+  letter-spacing: 3px;
+  color: var(--accent);
+}
+
+.signup-title {
+  margin-top: 1.5rem;
+  color: var(--accent);
+}
+
+/* ============================= */
+/* EMAIL INPUT */
+/* ============================= */
+.footer-input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--accent);
+  padding: 6px 0;
+  color: var(--white);
+  outline: none;
+  transition: 0.3s;
+}
+
+.footer-input::placeholder {
+  color: rgba(255,255,255,0.7);
+}
+
+.footer-input:focus {
+  border-bottom: 1px solid var(--white);
+}
+
+/* ============================= */
+/* SOCIAL */
+/* ============================= */
+.social-icons {
+  display: flex;
+  gap: 14px;
+  margin-top: 1.2rem;
+  font-size: 1.2rem;
+}
+
+.social-icons svg {
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.social-icons svg:hover {
+  color: var(--accent);
+  transform: scale(1.15);
+}
+
+/* ============================= */
+/* FOOTER BOTTOM */
+/* ============================= */
+.footer-bottom {
+  text-align: center;
+  margin-top: 3rem;
+  font-size: 0.85rem;
+  border-top: 1px solid rgba(255,255,255,0.2);
+  padding-top: 1rem;
+}
+
+/* ============================= */
+/* FLOATING WHATSAPP */
+/* ============================= */
+.whatsapp-float {
+  position: fixed;
+  right: 20px;
+  bottom: 25px;
+  background: #25D366;   /* Official WhatsApp Green */
+  color: #ffffff;
+  padding: 10px 16px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  text-decoration: none;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+  z-index: 1000;
+  transition: 0.3s ease;
+}
+
+.whatsapp-float:hover {
+  background: #1DA851;   /* Darker Green Hover */
+}
+
+/* ============================= */
+/* SHARE FLOAT */
+/* ============================= */
+.share-float {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  background: #25D366;  /* Darkest Teal */
+  color: #ffffff;
+  padding: 12px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.8rem;
+  border-radius: 8px 0 0 8px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  z-index: 1000;
+}
+
+.share-float:hover {
+  background: #1DA851; 
+  transform: translateX(-3px);
+}
+
+/* ============================= */
+/* RESPONSIVE */
+/* ============================= */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer {
+    padding: 2.5rem 1.5rem;
+  }
+
+  .whatsapp-float {
+    bottom: 15px;
+    right: 15px;
+    font-size: 0.8rem;
+  }
+}
